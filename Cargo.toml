@@ -1,0 +1,11 @@
+[package]
+name = "scroll-size-with"
+version = "0.1.0"
+authors = ["Ted Mielczarek <ted@mielczarek.org>"]
+
+[dependencies]
+scroll = { version = "0.9.0", features = ["derive"] }
+
+[replace]
+"scroll:0.9.0" = { git = "https://github.com/m4b/scroll", rev = "62d6adedea248eb859b2b69868862668d01af3ee" }
+"scroll_derive:0.9.4" = { git = "https://github.com/luser/scroll_derive", branch = "sizewith" }
